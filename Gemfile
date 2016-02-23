@@ -17,5 +17,6 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 source "https://rubygems.org"
+gem 'test-unit-runner-tap', :github => "renderedtext/test-unit-runner-tap"
 
 gemspec
