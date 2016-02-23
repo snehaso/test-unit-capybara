@@ -33,11 +33,13 @@ class AssertionsTest < Test::Unit::TestCase
     end
 
     def test_with_shortcut_content_type
+      sleep(15)
       visit("/")
       assert_body({"status" => true}, :content_type => :json)
     end
 
     def test_without_content_type
+      sleep(15)
       visit("/")
       assert_body({"status" => true})
     end
@@ -72,18 +74,21 @@ HTML
     end
 
     def test_css
+      sleep(12)
       visit("/")
       h2s = assert_all(:css, "h2")
       assert_equal(["Yay!", "World"], h2s.collect(&:text))
     end
 
     def test_xpath
+      sleep(12)
       visit("/")
       h2s = assert_all(:xpath, "//h2")
       assert_equal(["Yay!", "World"], h2s.collect(&:text))
     end
 
     def test_node
+      sleep(12)
       visit("/")
       section = find("div.section")
       h2s = assert_all(section, "h2")
