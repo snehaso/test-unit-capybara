@@ -9,6 +9,7 @@ h2. Description
 
 test-unit-capybara is a Capybara adapter for test-unit 2. You can get "Capybara":https://rubygems.org/gems/capybara integrated Test::Unit::TestCase. It also provides useful assertions for Capybara.
 
+
 h2. Install
 
 <pre>
